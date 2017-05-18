@@ -1,0 +1,123 @@
+﻿.profile-container, .friends-container {
+    height: calc(100vh - 125px);
+    top: 66px;
+    bottom: 0;
+    position: absolute;
+    overflow-x: hidden;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.profile-container {
+    width: 60vw;
+    min-width: 400px;
+    overflow-y: visible;
+}
+
+.profile-upper {
+    display: table;
+    width: 100%;
+}
+
+.avatar-container {
+    display: table-cell;
+    padding: 10px;
+    width: 50%;
+}
+
+.entries-container {
+    display: table-cell;
+    width: 100%;
+    vertical-align: top;
+}
+
+.info-container {
+    display: table;
+    width: 100%;
+}
+
+#showUpdateBtn, #showUploadModalBtn {
+    display: table;
+    margin: 0 auto;
+}
+
+.avatar {
+    display: block;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+.friends-container {
+    width: 40vw;
+    overflow-y: auto;
+    left: 60vw;
+    min-width: 200px;
+}
+
+.friend-icon {
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 8px;
+    display: table;
+}
+
+.friend-avatar {
+    border-radius: 50%;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+}
+
+.friend-name {
+    margin-left: 10px;
+}
+
+.entry {
+    margin-bottom: 8px;
+}
+
+.entry-label {
+    width: 80px;
+    display: inline-block;
+    font-size: larger;
+}
+
+.entry-value {
+    position: relative;
+    display: inline-block;
+    left: 20px;
+    font-size: larger;
+}
+
+.info-value {
+    font-size: larger;
+    min-height: 8em;
+}
+
+.info-header {
+    text-align: center;
+}
+
+.span3 {
+    width: 25em;
+}
+
+.modal-entry {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.befriend-btn {
+    float: right;
+    margin-top: 13px;
+}
+
+.file-input {
+    margin: 0 auto;
+    text-align: center;
+}

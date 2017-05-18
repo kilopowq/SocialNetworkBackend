@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BLL</name>
+    </assembly>
+    <members>
+        <member name="M:BLL.ConferenceAction.CreateConference(DAL.Models.ConferenceDto)">
+            <summary>
+            Create a new conference.</summary>
+        </member>
+        <member name="M:BLL.ConferenceAction.GetAllConfs">
+            <summary>
+            Returns all conferences.</summary>
+        </member>
+        <member name="M:BLL.ConferenceAction.GetConf(System.Int32)">
+            <summary>
+            Returns conference by id.</summary>
+        </member>
+        <member name="M:BLL.ConferenceAction.GetMessageFromConf(System.Int32)">
+            <summary>
+            Returns all messages from conference.</summary>
+        </member>
+        <member name="M:BLL.ConferenceAction.GetNewMessagesFromConf(System.Int32,System.Int32)">
+            <summary>
+            Returns messages from conferences where Message id >= startFrom.</summary>
+        </member>
+        <member name="M:BLL.ConferenceAction.GetUserConferences(System.Int32)">
+            <summary>
+            Returns all user conferences.</summary>
+        </member>
+        <member name="M:BLL.ConferenceAction.GetUsersFromConf(System.Int32)">
+            <summary>
+            Returns members of conference.</summary>
+        </member>
+        <member name="M:BLL.FriendsListAction.AddFriend(System.Int32,System.Int32)">
+            <summary>
+            Add friend from follows (first user = follower).</summary>
+        </member>
+        <member name="M:BLL.FriendsListAction.DeleteFriend(System.Int32,System.Int32)">
+            <summary>
+            Delete user from friends list.</summary>
+        </member>
+        <member name="M:BLL.FriendsListAction.Follow(System.Int32,System.Int32)">
+            <summary>
+            Follow to user (first user = follower).</summary>
+        </member>
+        <member name="M:BLL.FriendsListAction.GetFollowersList(System.Int32)">
+            <summary>
+            Returns list of user followers.</summary>
+        </member>
+        <member name="M:BLL.FriendsListAction.GetFollowsList(System.Int32)">
+            <summary>
+            Returns list of user follows.</summary>
+        </member>
+        <member name="M:BLL.FriendsListAction.GetFriendsList(System.Int32)">
+            <summary>
+            Returns list of user friends.</summary>
+        </member>
+        <member name="M:BLL.FriendsListAction.Unfollow(System.Int32,System.Int32)">
+            <summary>
+            Unfollow from user (first user = follower).</summary>
+        </member>
+        <member name="M:BLL.MessagesActions.CorrectMessage(DAL.Models.MessageDto)">
+            <summary>
+            Correct message.</summary>
+        </member>
+        <member name="M:BLL.MessagesActions.GetMessage(System.Int32)">
+            <summary>
+            Return message by id.</summary>
+        </member>
+        <member name="M:BLL.MessagesActions.PostMessage(DAL.Models.MessageDto)">
+            <summary>
+            Send message on map.</summary>
+        </member>
+        <member name="M:BLL.MessagesActions.SendMessage(DAL.Models.MessageDto)">
+            <summary>
+            Sent message on conference.</summary>
+        </member>
+        <member name="M:BLL.UserActions.DeletePage(System.Int32)">
+            <summary>
+            Set user status "deleted".</summary>
+        </member>
+        <member name="M:BLL.UserActions.Login(System.String,System.String)">
+            <summary>
+            Login user by login and password and return it.</summary>
+        </member>
+        <member name="M:BLL.UserActions.ReActivatePage(System.Int32)">
+            <summary>
+            Sets user status "active".</summary>
+        </member>
+        <member name="M:BLL.UserActions.BlockPage(System.Int32)">
+            <summary>
+            Sets user status "blocked".</summary>
+        </member>
+        <member name="M:BLL.UserActions.Register(DAL.Models.UserDto)">
+            <summary>
+            Register new user in DB.</summary>
+        </member>
+        <member name="M:BLL.UserActions.GetAllUsers">
+            <summary>
+            Returns list of all users.</summary>
+        </member>
+        <member name="M:BLL.UserActions.GetUser(System.Int32)">
+            <summary>
+            Returns user by id.</summary>
+        </member>
+        <member name="M:BLL.UserActions.UpdateUser(DAL.Models.UserDto)">
+            <summary>
+            Update user.</summary>
+        </member>
+        <member name="M:BLL.UserActions.FindUsersByName(System.String)">
+            <summary>
+            Find and return users by his name.</summary>
+        </member>
+        <member name="M:BLL.UserActions.FindUsersByLogin(System.String)">
+            <summary>
+            Find and return users by his login.</summary>
+        </member>
+        <member name="M:BLL.UserActions.SaveAvatar(System.Int32,System.String)">
+            <summary>
+            Save the avatar path on server in DB.</summary>
+        </member>
+        <member name="M:BLL.UserActions.ChangePassword(System.Int32,System.String,System.String)">
+            <summary>
+            Change user password.</summary>
+        </member>
+        <member name="M:BLL.UserActions.OffPage(System.Int32)">
+            <summary>
+            Sets user status "offline".</summary>
+        </member>
+        <member name="M:BLL.UserActions.OnPage(System.Int32)">
+            <summary>
+            Sets user status "active" if it been "offline".</summary>
+        </member>
+    </members>
+</doc>

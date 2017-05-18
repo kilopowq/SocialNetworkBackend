@@ -1,0 +1,33 @@
+﻿(get)	/api/account?login&&password - вхід
+(post)	/api/account ([FromBody] UserDto) Реєстрація
+(put)	/api/account/change?userId&oldPass&newPass зміна паролю якшо співпадає введений старий пароль
+(delete)/api/account?userId - вихід
+
+(get)	/api/users/{userID}/conferences - всі конференції юзера
+(get)	/api/conferences/{id} - конференція по заданому Id
+(post)	/api/conferences (int firstUser, int secondUser, string title) - створює діалог
+(post)	/api/conferences ([FromBody] List<UserDto> members, string title) - створює конференцію 
+
+(get)	/api/conferences/{id}/messages - повертає всі повідомлення з конференції
+(get)	/api/conferences/{confId}/messages/{startId} - повертає всі повідомлення з конференції айді яких більше за задане
+(post)	/api/messages ([FromBody] MessageDto message) - надсилає повідомлення в діалог
+(put)	/api/messages ([FromBody] MessageForCorrect message) - редагує текст повідомлення
+
+(get)	/api/users	- список всіх юзерів
+(get)	/api/users/{id}	- видає юзера з заданим Id
+(put)	/api/users/{id}	- редагує юзера
+(put)	/api/users/reactivate/{id} - встановлює бзеру статус "активний"
+(delete)/api/users/{id}	- ставить юзеру статус "видалений"
+(get)	/api/users/byLogin?login - пошук юзера по логіну
+(get)	/api/users/byName?name - пошук юзерів за імям або призвіщем
+
+(put)	/api/follows?firstUser&&secondUser	- підписатись
+(delete)/api/follows?firstUser&&secondUser	- відписатись
+(put)	/api/friends?firstUser&&secondUser	- додати в друзі
+(delete)/api/friends?firstUser&&secondUser	- видалити з друзів
+(get)	/api/follows/{id}	- видає всі підписки
+(get)	/api/followers/{id}	- видає всіх підписників
+(get)	/api/friends/{id}	- видає всіх друзів
+
+(post)	/api/files/avatar?userId - вставляє юзеру аватарку (в тілі треба передати файл з атрибутом тіла "avatar")
+(get)	/api/files/avatar?userId - дістає аватарку юзера

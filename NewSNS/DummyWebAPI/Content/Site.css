@@ -1,0 +1,85 @@
+﻿html, body {
+  height: 100%;
+  margin: 0;
+  padding-top: 35px;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.body-content {
+  display: table-row;
+  height: 100%;
+}
+
+.header{
+  padding: 10px 20px;
+}
+
+.footer {
+  padding: 10px 20px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.navbar {
+    border: none;
+}
+
+.navbar-header {
+    border: none;
+}
+
+.navbar-toggle {
+    border: none;
+}
+
+.custom-btn {
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px 16px;
+    height: 35px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.custom-btn-lg {
+    text-align: center;
+    border-radius: 8px;
+    padding: 12px 24px;
+    height: 35px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.darky {
+    color: white;
+}
+
+.custom-btn:hover {
+  -webkit-filter: brightness(120%);
+}
+
+.inactive {
+    -webkit-filter: brightness(140%);
+    cursor: default;
+}
+
+.active {
+    -webkit-filter: brightness(100%);
+    cursor: pointer;
+}
+
+#colorSchemeForm {
+    text-align: center;
+}
+
+#colorSchemeForm .modal-entry {
+    margin: 20px;
+}

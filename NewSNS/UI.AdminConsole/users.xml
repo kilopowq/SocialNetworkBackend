@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<users>  
+  <user id="100500" name="Roma" birth="28.10.1979" state="Closed">
+    <friends>
+      <friend id="1"></friend>
+      <friend id="2"></friend>
+      <friend id="3"></friend>
+      <friend id="4"></friend>
+      <friend id="5"></friend>
+    </friends>
+  </user>
+  <user id="1" name="Ірина" birth="09.05.2016" state="Active"
+        password="wLR/I+5M8LDp8Xg67yk/LdbXKFSkIrhmPFqnqLa5H6PzDNtwADxQtIVy1HVIj5mTiztHk3XwPEkj/oKyabXeuMsxPLM=">
+    <friends>
+      <friend id="100500"></friend>
+      <friend id="2"></friend>
+      <friend id="3"></friend>
+    </friends>
+  </user>
+  <user id="2" name="Наталія" birth="09.09.1981" state="Active">
+    <friends>
+      <friend id="100500"></friend>
+      <friend id="1"></friend>
+      <friend id="4"></friend>
+    </friends>
+  </user>
+  <user id="3" name="Василь" birth="11.01.1984" state="Active">
+    <friends>
+      <friend id="100500"></friend>
+      <friend id="1"></friend>
+      <friend id="5"></friend>
+    </friends>
+  </user>
+  <user id="4" name="Ярослав" birth="10.01.1986" state="Active">
+    <friends>
+      <friend id="100500"></friend>
+      <friend id="2"></friend>
+    </friends>
+  </user>
+  <user id="5" name="Микола" birth="16.04.1970" state="Active">
+    <friends>
+      <friend id="100500"></friend>
+      <friend id="3"></friend>
+    </friends>
+  </user>
+</users>

@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DummyWebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:DummyWebAPI.Controllers.AccountController.GetAccount(System.String,System.String)">
+            <summary>
+            Login and turn account "online".
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.AccountController.OffAccount(System.Int32)">
+            <summary>
+            Turn account "offline".
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.AccountController.Register(DAL.Models.UserDto)">
+            <summary>
+            Register a new account.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.AccountController.ChangePassword(System.Int32,System.String,System.String)">
+            <summary>
+            Change account password.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.ConferencesController.GetUserConferences(System.Int32)">
+            <summary>
+            Get all user conferences.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.ConferencesController.GetConference(System.Int32)">
+            <summary>
+            Get a conference by id.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.ConferencesController.CreateDialog(System.Int32,System.Int32,System.String)">
+            <summary>
+            Create a new conference with two members.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.ConferencesController.CreateConf(System.Collections.Generic.List{DAL.Models.UserDto},System.String)">
+            <summary>
+            Create new conference.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.ConferencesController.CreateDefaultNamedConf(System.Collections.Generic.List{DAL.Models.UserDto})">
+            <summary>
+            Create new conference named by members names.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.FilesController.UploadFile(System.Int32)">
+            <summary>
+            Upload avatar to server.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.FilesController.Post(System.Int32)">
+            <summary>
+            Get user avatar file.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.FilesController.Get(System.Int32)">
+            <summary>
+            Get user avatar path.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.FriendsController.Subscribe(System.Int32,System.Int32)">
+            <summary>
+            Subscribe first user to the second.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.FriendsController.AddToFriend(System.Int32,System.Int32)">
+            <summary>
+            Add first friend to friends list.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.FriendsController.RemoveFriend(System.Int32,System.Int32)">
+            <summary>
+            Remove user from friends list.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.FriendsController.Unsuncribe(System.Int32,System.Int32)">
+            <summary>
+            Unfollow first user from the second.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.FriendsController.GetFollowers(System.Int32)">
+            <summary>
+            Get all user followers.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.FriendsController.GetFollows(System.Int32)">
+            <summary>
+            Get all user follows.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.FriendsController.GetFriends(System.Int32)">
+            <summary>
+            Get all user friends.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.MessagesController.GetMessagesFromConf(System.Int32)">
+            <summary>
+            Get all messages from conference.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.MessagesController.GetNewMessagesFromConf(System.Int32,System.Int32)">
+            <summary>
+            Get all messages from conferences, where message id > startId.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.MessagesController.SendMessage(DAL.Models.MessageDto)">
+            <summary>
+            Send message to the conference.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.MessagesController.PostMessage(DAL.Models.MessageDto)">
+            <summary>
+            Post message on the map.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.MessagesController.CorrectMessage(DummyWebAPI.Models.MessageForCorrect)">
+            <summary>
+            Correct message.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.UsersController.DeleteUser(System.Int32)">
+            <summary>
+            Delete user.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.UsersController.GetAllUsers">
+            <summary>
+            TGet all users lsit.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.UsersController.GetUser(System.Int32)">
+            <summary>
+            Get user by id.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.UsersController.ReactivateUser(System.Int32)">
+            <summary>
+            Reactivate deleted user.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.UsersController.UpdateUser(DAL.Models.UserDto)">
+            <summary>
+            Update user.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.UsersController.FindUsersByName(System.String)">
+            <summary>
+            Find users by name.
+            </summary>
+        </member>
+        <member name="M:DummyWebAPI.Controllers.UsersController.FindUsersByLogin(System.String)">
+            <summary>
+            Find user by login.
+            </summary>
+        </member>
+    </members>
+</doc>

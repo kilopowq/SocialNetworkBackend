@@ -1,0 +1,44 @@
+﻿.friends-container {
+      margin-left: auto;
+  margin-right: auto;
+}
+
+.scroller {
+  max-height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+  max-width: 600px;
+  display: block;
+
+}
+
+.body-content {
+          margin-left: auto;
+  margin-right: auto;
+}
+
+.full-name {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.btn-conversation {
+  float: right;
+    margin: 12px 20px;
+  width: 80px;
+}
+
+.friend {
+    padding-bottom: 8px;
+}
+
+.simple-friend {
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}

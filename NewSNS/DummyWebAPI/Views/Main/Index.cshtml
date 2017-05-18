@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "View";
+}
+
+@section scripts {
+    @Scripts.Render("~/Scripts/parser.js")
+    @Scripts.Render("~/Scripts/messages.js")
+}
+
+@section styles {
+    @Styles.Render("~/Content/css/messages.css")
+}
+
+<div class="body-container">
+    <div class="conference-container"></div>
+    <div class="message-feed"></div>
+    <div class="input-group bottom-panel">
+        <div id="modal" class="modal">
+            <div id="modalContent" class="modal_content">
+                <img id="source" src="/Content/Img/emo_sm.gif"
+                        width="150" height="94" />
+            </div>
+        </div>
+        <div class="input-group">
+            <input id="messageText" type="text" class="form-control" aria-label="..." />
+            <div class="input-group-btn">
+                <button id="emoBtn" type="button" class="btn btn-default"><i class="fa fa-smile-o"></i></button>
+                <button id="sendBtn" type="button" class="btn btn-default"><i class="glyphicon glyphicon-play"></i></button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+#menu {
+    background-color: #9cf;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.userMenuItem {
+    text-align: left!important;
+    display: block!important;
+}
+
+.newsItem {
+    border: 1px solid #ccc;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    background-color: #ccffe6;
+}
+
+#friendsOnline {
+    background-color: #9fc;
+    padding-top: 5px;
+}
+
+.avaImg {
+    display: inline-block;
+    width: 50px;
+}
+
+.userOnlineImg {
+    width: 25px;
+}
+
+.friendName {
+    color: #3df;
+    font-weight: bold;
+}
+
+.messageDate {
+    padding-left: 20px;
+    color: #ccc;
+    font-style: italic;
+    display: block;
+}

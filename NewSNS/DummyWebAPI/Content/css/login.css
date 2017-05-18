@@ -1,0 +1,29 @@
+﻿.entry-label {
+    width: 120px;
+    display: inline-block;
+    font-size: larger;
+}
+
+.span3 {
+    width: 25em;
+}
+
+.modal-entry {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-btn-group {
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    bottom: 120px;
+    width: 280px;
+
+}
+
+#signInBtn, #signUpBtn {
+    margin: 20px;
+}

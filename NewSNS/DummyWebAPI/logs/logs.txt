@@ -1,0 +1,1 @@
+2016-12-20 21:19:49.1035|ERROR|DummyWebAPI.WebApiConfig+<>c|Exception of type 'System.Exception' was thrown. in Repository

@@ -1,0 +1,130 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@section scripts {
+    @Scripts.Render("~/Scripts/profile.js")
+}
+
+@section styles {
+    @Styles.Render("~/Content/css/profile.css")
+}
+
+<div class="profile-container">
+    <div class="profile-upper">
+        <div class="avatar-container">
+            <img class="avatar" src="~/Content/Img/no-picture.png" alt="Avatar">
+            <span id="showUploadModalBtn" class="custom-btn darky">Upload picture</span>
+        </div>
+
+        <div class="entries-container">
+            <div class="full-name darky-text"></div>
+            <div class="entry">
+                <div class="entry-label">Birth date:</div>
+                <div class="entry-value" id="birthDate"></div>
+            </div>
+            <div class="entry">
+                <div class="entry-label">Email:</div>
+                <div class="entry-value" id="email"></div>
+            </div>
+            <div class="entry">
+                <div class="entry-label">Country:</div>
+                <div class="entry-value" id="country"></div>
+            </div>
+            <div class="entry">
+                <div class="entry-label">City:</div>
+                <div class="entry-value" id="city"></div>
+            </div>
+            <div class="entry">
+                <div class="entry-label">Phone:</div>
+                <div class="entry-value" id="phone"></div>
+            </div>
+            <div class="entry">
+                <div class="entry-label">Status:</div>
+                <div class="entry-value" id="status"></div>
+            </div>
+        </div>
+    </div>
+    <div class="info-container">
+        <h3 class="info-header darky-text">Info</h3>
+        <div class="info-value" id="info"></div>
+        <span id="showUpdateBtn" class="custom-btn darky">Update profile</span>
+    </div>
+</div>
+
+<div class="friends-container">
+    <h3 class="darky-text">Friends</h3>
+    <div class="friends-icons-container"></div>
+    <div class="make-friend-container">
+        <div class="input-group">
+            <input id="users" type="text" class="form-control" placeholder="Type name...">
+            <span class="input-group-btn">
+                <button id="showMatchesBtn" class="btn btn-default" type="button">Make a friend</button>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div id="pictureModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add your picture:</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+
+                        <input multiple="multiple" name="files[]" accept="image" type="file" class="span3 file-input">
+                    @*<input type="file" multiple="multiple" name="files[]" accept="image" class="file-input"/>*@
+                    <div class="modal-entry">
+                        <span id="uploadBtn" class="custom-btn darky">Upload</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="infoModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Update your profile data:</h4>
+            </div>
+            <div class="modal-body">
+                <form method="post" action='' name="login_form">
+                    <div class="modal-entry"><div class="entry-label">Country:</div><input type="text" class="span3" id="countryInput"></div>
+                    <div class="modal-entry">
+                        <div class="entry-label">City:</div><input type="text" class="span3" id="cityInput">
+                    </div>
+                    <div class="modal-entry">
+                        <div class="entry-label">Phone:</div><input type="text" class="span3" id="phoneInput">
+                    </div>
+                    <div class="modal-entry">
+                        <div class="entry-label">Info:</div><textarea rows="4" class="span3" id="infoInput"></textarea>
+                    </div>
+                    <div class="modal-entry">
+                        <span id="updateBtn" class="custom-btn darky">Update</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="befriendModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add to friends:</h4>
+            </div>
+            <div class="modal-body">
+                <div id="matches"></div>
+            </div>
+        </div>
+    </div>
+</div>
